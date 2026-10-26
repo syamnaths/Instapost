@@ -1,0 +1,164 @@
+/* Instapost Flat Design System */
+
+:root {
+    --primary-blue: #0752a0;
+    --background-gray: #f3f6fa;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --text-main: #212529;
+    --text-muted: #596779;
+    --srishti-blue: #0752a0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-gray);
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+.srishti-header { padding-top: .75rem; }
+.campus-brand-mark { display: block; width: min(250px, 65vw); height: 72px; object-fit: contain; margin: 0 auto 1.1rem; }
+.logo-downloads { background: #f3f6fa; }
+
+/* Flat Typography */
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    font-weight: 700 !important;
+}
+
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.extra-small {
+    font-size: 0.75rem;
+}
+
+label {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+}
+
+/* Flat Components */
+.card {
+    border: 1px solid var(--border-color);
+    box-shadow: none !important;
+    border-radius: 0.75rem;
+}
+
+.form-control, .form-select {
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s ease;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--primary-blue);
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    transition: all 0.2s ease;
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+}
+
+/* Custom UI Elements */
+.action-bar {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-bottom: 0;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 0.75rem 1.25rem;
+}
+
+.action-bar-card {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.rounded-4 { border-radius: 0.75rem !important; }
+
+/* Radio Button Highlights */
+.btn-check:checked + .btn-outline-primary {
+    background-color: var(--primary-blue) !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+.form-check-input:checked { background-color:var(--srishti-blue); border-color:var(--srishti-blue); }
+
+.btn-check:checked + .btn-outline-secondary {
+    background-color: #6c757d !important;
+    color: white !important;
+}
+
+/* Format Tiles */
+.format-tile {
+    min-height: 80px;
+    background-color: #fff;
+    border: 2px solid var(--border-color) !important;
+    color: var(--text-main);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.format-tile:hover {
+    border-color: var(--primary-blue) !important;
+    background-color: rgba(13, 110, 253, 0.02);
+}
+
+.btn-check:checked + .format-tile {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3) !important;
+}
+
+/* Prompt Output Area */
+#prompt-output {
+    background-color: #1a1d20 !important;
+    color: #4ade80 !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: row;
+    }
+    .display-4 {
+        font-size: 2.25rem;
+    }
+    .btn-lg {
+        width: 100%;
+    }
+}
+
+/* UI Transitions */
+.diminished {
+    opacity: 0.45;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.diminished * {
+    cursor: not-allowed !important;
+}
