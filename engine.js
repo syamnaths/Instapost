@@ -209,8 +209,8 @@ function generatePromptText(data) {
 
     const logoInstruction = `\n  "LOGO_INTEGRATION": {
     "is_logo_mandatory": true,
-    "light_logo_asset": "${data.logo_light || 'logo/Srishti campus light ogo.png'}",
-    "dark_logo_asset": "${data.logo_dark || 'logo/Srishti campus logo 4.19.44 PM.png'}",
+    "light_logo_asset": "${data.logo_light || 'https://syamnaths.github.io/Instapost/logo/srishti-campus-logo-light.png'}",
+    "dark_logo_asset": "${data.logo_dark || 'https://syamnaths.github.io/Instapost/logo/srishti-campus-logo-dark.png'}",
     "usage_rule": "Use the light logo on dark backgrounds and the dark logo on light backgrounds. Both are official Srishti Campus assets.",
     "sizing_rule": "Keep the logo clearly legible at social-media size while respecting its original proportions and clear space.",
     "alignment_strategy": "Place it near the top edge with safe margins, away from faces and important copy.",
@@ -307,7 +307,7 @@ function generatePromptText(data) {
     }
   },
   "content_placeholders": {
-    "brand_logo": "Use the official Srishti Campus logo variant with appropriate contrast: light logo ${data.logo_light || 'logo/Srishti campus light ogo.png'} on dark backgrounds, dark logo ${data.logo_dark || 'logo/Srishti campus logo 4.19.44 PM.png'} on light backgrounds. Preserve proportions and clear space; never redraw, distort, crop, or replace either asset.",
+    "brand_logo": "Use the official Srishti Campus logo variant with appropriate contrast: light logo ${data.logo_light || 'https://syamnaths.github.io/Instapost/logo/srishti-campus-logo-light.png'} on dark backgrounds, dark logo ${data.logo_dark || 'https://syamnaths.github.io/Instapost/logo/srishti-campus-logo-dark.png'} on light backgrounds. Preserve proportions and clear space; never redraw, distort, crop, or replace either asset.",
     "hook": "${finalHook}",
     "brand_name": "${brandName}",
     "event_offer": "${finalOffer}",
